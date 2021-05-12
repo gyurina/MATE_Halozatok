@@ -1,0 +1,22 @@
+{
+  "name": "chatszerver_nadhazy_rkbxxm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ChatKliens.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyurina/MATE_Halozatok.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gyurina/MATE_Halozatok/issues"
+  },
+  "homepage": "https://github.com/gyurina/MATE_Halozatok#readme",
+  "dependencies": {
+    "node-datetime": "^2.1.2"
+  }
+}
