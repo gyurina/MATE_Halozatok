@@ -19,11 +19,11 @@ Készítette: **Nádházy György** (RKBXXM)
  - Az órán elhangzott hálózati ismeretek
  - Az órán elkészített hasonló alkalmazás bemutatása
  - felhasznált csomagok dokumentációja
- -- [node-datetime dokumentáció](https://www.npmjs.com/package/node-datetime#methods)
- -- [node.JS net](https://nodejs.org/api/net.html)
+   * [node-datetime dokumentáció](https://www.npmjs.com/package/node-datetime#methods)
+   * [node.JS net](https://nodejs.org/api/net.html)
  - Stackoverflow: 
- -- Hogyan formázzuk a dátumot node-datetime csomaggal ([link](https://stackoverflow.com/questions/38182501/how-to-get-current-datetime-with-format-y-m-d-hms-using-node-datetime-library))
- -- `console.log` szövegek színezése ([link](https://stackoverflow.com/a/41407246/15366989))
+   * Hogyan formázzuk a dátumot node-datetime csomaggal ([link](https://stackoverflow.com/questions/38182501/how-to-get-current-datetime-with-format-y-m-d-hms-using-node-datetime-library))
+   * `console.log` szövegek színezése ([link](https://stackoverflow.com/a/41407246/15366989))
 
 ### Használat
 
@@ -51,17 +51,17 @@ data  = fdt + " --> " + buffer.toString();
  2. Specifikáció készítés:
  - két "modul" elkészítése szükséges
  - szerver feladatai:
- -- egy megadott port (jelen esetben a 3000-es) figyelése, kliens csatlakozásra várakozás
- -- fogadni a kliens csatlakozását
- -- jelezni a kliensnek a sikeres csatlakozást
- -- a szerver konzolon megjeleníteni, hogy klienscsatlakozás történt
- -- a konzolon begépelt üzenetet elküldeni a kliensnek
- -- fogadni a klienstől érkező üzeneteket és azokat megjeleníteni a konzolon
- -- ha a kliens kapcsolat megszakad, az a konzolon megjeleníteni
+   * egy megadott port (jelen esetben a 3000-es) figyelése, kliens csatlakozásra várakozás
+   * fogadni a kliens csatlakozását
+   * jelezni a kliensnek a sikeres csatlakozást
+   * a szerver konzolon megjeleníteni, hogy klienscsatlakozás történt
+   * a konzolon begépelt üzenetet elküldeni a kliensnek
+   * fogadni a klienstől érkező üzeneteket és azokat megjeleníteni a konzolon
+   * ha a kliens kapcsolat megszakad, az a konzolon megjeleníteni
 - kliens feladatai:
--- csatlakozni a szerverhez
--- a szervertől érkező üzenetek megjelenítése
--- üzenet küldése a szervernek
+  * csatlakozni a szerverhez
+  * a szervertől érkező üzenetek megjelenítése
+  * üzenet küldése a szervernek
  3. Programozás
 A programozás során a [TDD](https://hu.wikipedia.org/wiki/Tesztvez%C3%A9relt_fejleszt%C3%A9s) módszertant használtam. 
 Első lépésben a szerver fejlesztését kezdtem annak kialakításával, hogy a szerver képes legyen kapcsolatot fogadni:
@@ -115,5 +115,5 @@ var socket = net.Socket();
 socket.connect(3000, 'localhost');
 socket.on('connect', function() {});
 ```
+**És ezzel el is készült az alkalmazás.**
 
-És ezzel el is készült az alkalmazás.
